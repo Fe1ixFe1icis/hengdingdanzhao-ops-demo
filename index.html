@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>单招运营工作台 · 演示版</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script>
+  /* 演示版配置：完整版把 demo 改为 false、protect 改为 false 即可 */
+  window.DZ_CONFIG = {
+    demo: true,                 // 演示版：导出/下载锁定为水印预览
+    protect: true,              // 启用防护层
+    watermarkText: '演示试用版本',
+    watermarkText2: 'DanzhaoOps Demo',
+    devToolsDetect: true,
+    devToolsThreshold: 220
+  };
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logo">
+      <span class="mark">单</span>
+      <span>单招运营工作台</span>
+      <span class="badge">演示版</span>
+    </div>
+    <nav class="mainnav" id="nav"></nav>
+  </div>
+</header>
+
+<div class="demo-banner">
+  <div class="inner">
+    <span>🔒</span>
+    <span><b>演示试用版本</b>　全流程可体验，导出/下载均为带水印预览，不产出可用成品。版权所有，禁止复制与传播。</span>
+  </div>
+</div>
+
+<main>
+  <section class="view active" id="view-home"></section>
+  <section class="view" id="view-parse"></section>
+  <section class="view" id="view-content"></section>
+  <section class="view" id="view-templates"></section>
+  <section class="view" id="view-leads"></section>
+  <section class="view" id="view-dashboard"></section>
+  <section class="view" id="view-settings"></section>
+</main>
+
+<div id="toasts"></div>
+
+<script src="data/syllabus.js"></script>
+<script src="data/presets.js"></script>
+<script src="assets/adapter.client.js"></script>
+<script src="assets/ai.client.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/protect.js"></script>
+</body>
+</html>
